@@ -1,0 +1,33 @@
+{
+  "format_version": 1,
+  "imports": [
+    {
+      "target_table": "MY_BOOKSHOP_ORDERS",
+      "source_data": {
+        "data_type": "CSV",
+        "file_name": "my.bookshop-Orders.csv",
+        "has_header": true,
+        "type_config": {
+          "delimiter": ","
+        }
+      },
+      "import_settings": {
+        "import_columns": [
+          "ID",
+          "CREATEDBY",
+          "CREATEDAT",
+          "AMOUNT",
+          "BOOK_ID"
+        ],
+        "include_filter": []
+      },
+      "column_mappings": {
+        "ID": "ID",
+        "CREATEDBY": "CREATEDBY",
+        "CREATEDAT": "CREATEDAT",
+        "AMOUNT": "AMOUNT",
+        "BOOK_ID": "BOOK_ID"
+      }
+    }
+  ]
+}
